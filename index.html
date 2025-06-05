@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body class="flotante">
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">FreeStyle</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">MIS SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/miFoto.jpeg" alt="">
+            </div>
+            <h1>VICTOR ALEJANDRO</h1>
+            <h2>Estudiante DAM - Linkia FP</h2>
+            <div class="redes">
+                <a href="https://m.facebook.com/profile.php?id=61573894828264"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=w9zzh34"><i class="fa-brands fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fab fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/qr/WFZRO6ZASIUSF1"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi elemento-fade-right" >
+        <div class="contenido-seccion eelemento-fade-right">
+            <h2 class="elemento-fade-right"">Sobre Mí</h2>
+            <p class="elemento-fade-right"><span class="elemento-fade-right">Hola, soy Victor Alejandro.</span> Estudiante de Desarrollo de Aplicaciones Multiplataforma con sólida
+formación técnica y experiencia en lenguajes como Java, Python y
+JavaScript. Apasionado por el desarrollo de software web, móvil y de
+escritorio, con capacidad para adaptarse rápidamente a nuevos
+entornos tecnológicos. En busca de una oportunidad para contribuir
+en equipos dinámicos mientras continúo aprendiendo del entorno
+profesional.</p>
+
+            <div class="fila elemento-fade-left">
+                <!-- datos personales -->
+                <div class="col elemento-fade-right">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            26-11-1996
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            603 20 28 81
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            76087583@certus.edu.pe
+                        </li>  
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle Arriaga 21 MADRID - ESPAÑA 
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+    <div class="col">
+  <h3>Intereses</h3>
+  <div class="contenedor-intereses">
+    <div class="interes" data-audio="juegos">
+      <i class="fa-solid fa-gamepad"></i>
+      <span>Touch me</span>
+      <audio id="audio-juegos" src="./audios/juegos.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="musica">
+      <i class="fa-solid fa-headphones"></i>
+      <span>Touch me</span>
+      <audio id="audio-musica" src="./audios/musica.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="viajar">
+      <i class="fa-solid fa-plane"></i>
+      <span>VIAJAR</span>
+      <audio id="audio-viajar" src="./audios/viajar.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="futbol">
+      <i class="fa-solid fa-futbol"></i>
+      <span>FÚTBOL</span>
+      <audio id="audio-futbol" src="./audios/futbol.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="programar">
+      <i class="fa-solid fa-computer"></i>
+      <span>PROGRAMAR</span>
+      <audio id="audio-programar" src="./audios/programar.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="autos">
+      <i class="fa-solid fa-car"></i>
+      <span>Touch me</span>
+      <audio id="audio-autos" src="./audios/autos.mp3" preload="auto"></audio>
+    </div>
+    <div class="interes" data-audio="fotos">
+      <i class="fa-solid fa-camera"></i>
+      <span>FOTOS</span>
+      <audio id="audio-fotos" src="./audios/fotos.mp3" preload="auto"></audio>
+    </div>
+  </div>
+</div>
+
+
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Mis Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3> Mis Aptitudes</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+<section id="curriculum" class="curriculum">
+  <div class="contenido-seccion">
+    <h2>Curriculum</h2>
+
+    <div class="timeline">
+
+      <!-- ITEM 1 -->
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/certus.jfif" alt="CERTUS">
+              <div>
+                <h4>Diseño y Desarrollo de Software</h4>
+                <span class="casa">CERTUS</span>
+                <span class="fecha">2020 - 2023</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <button class="toggle-btn">Ver más</button>
+              <p class="descripcion">
+                En CERTUS, adquirí competencias clave en programación, desarrollo web, bases de datos y metodologías ágiles. Participé en proyectos prácticos que consolidaron mis conocimientos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="card">
+            <div class="card-header">
+              <img src="./img/utp.jfif" alt="UTP">
+              <div>
+                <h4>Ingeniería Mecánica</h4>
+                <span class="casa">UTP</span>
+                <span class="fecha">2017 - 2020</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <button class="toggle-btn">Ver más</button>
+              <p class="descripcion">
+                En la UTP, desarrollé habilidades analíticas a través de cursos de física, mecánica y diseño técnico. Este periodo formó la base de mi pensamiento estructurado y resolución de problemas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- SECCION PORTFOLIO -->
+    
+   
+    <section id="portfolio"  style= "background-color: #252A2E;" class="galeria-interactiva portfolio">
+      
+
+        <h2>Mis Trabajos</h2>
+        
+       <div class="">
+        <input type="radio" name="galeria" id="gal1">
+        <input type="radio" name="galeria" id="gal2">
+        <input type="radio" name="galeria" id="gal3">
+        <input type="radio" name="galeria" id="gal4">
+        <input type="radio" name="galeria" id="gal5">
+        <input type="radio" name="galeria" id="gal6">
+        <input type="radio" name="galeria" id="gal7">
+        <input type="radio" name="galeria" id="gal8">
+        <input type="radio" name="galeria" id="gal9">
+      
+        
+         <h1>Sectores Profesionales</h1>
+        <div  class="contenedor-galeria">
+          <label for="gal1" class="img-con-texto">
+            <img src="https://static4.depositphotos.com/1018728/331/i/450/depositphotos_3315477-stock-photo-zoom-in-statistic.jpg" height="400em" alt="">
+            <div class="overlay">
+                
+                <p>Sector Empresarial</p>
+            </div>
+           
+          </label>
+          <label for="gal2" class="img-con-texto">
+            <img  src="https://www.diariodetransporte.com/asset/thumbnail,1280,720,center,center/media/diariodetransporte/images/2024/11/12/2024111218383894919.jpg" alt="Imagen 2">
+            <div class="overlay">
+                
+                <p>Sector Logistico</p>
+            </div>
+          </label>
+          <label for="gal3" class="img-con-texto">
+            <img style="cursor: pointer;" src="https://institutoautor.org/wp-content/uploads/2024/10/Nueva-web-12.png" alt="Imagen 3">
+            <div class="overlay">
+                
+                <p>Sector Cultural</p>
+            </div>
+          </label>
+        </div>
+       <div  class="contenedor-galeria">
+          <label for="gal1" class="img-con-texto">
+            <img src="https://elmedicointeractivo.com/wp-content/uploads/2022/02/Bionexo_Tendencias_sector_salud.png" height="400em" alt="">
+            <div class="overlay">
+                
+                <p>Sector Salud</p>
+            </div>
+           
+          </label>
+          <label for="gal2" class="img-con-texto">
+            <img  src="https://media.istockphoto.com/id/1311084163/es/foto/guardia-de-seguridad-observando-el-sistema-de-seguridad-de-monitoreo-de-v%C3%ADdeo.jpg?s=612x612&w=0&k=20&c=TyYVc4Wf22u4O_Yt3UuTdYBRGFxroRN5vpOLa3Imrb8=" alt="Imagen 2">
+            <div class="overlay">
+                
+                <p>Sector Seguridad</p>
+            </div>
+          </label>
+          <label for="gal3" class="img-con-texto">
+            <img style="cursor: pointer;" src="https://media.istockphoto.com/id/1560833158/es/foto/controlador-de-juego-con-teclado-iluminado-de-color-p%C3%BArpura-en-medio-de-varios-dispositivos.jpg?s=612x612&w=0&k=20&c=VcOavuq_yYYY_prnW6qehysZIA_xxCKOYiTtPUR0XyI=" alt="Imagen 3">
+            <div class="overlay">
+            
+                <p>Sector Ocio </p>
+            </div>
+          </label>
+        </div>
+
+           <h1>Cualificaciones Profesionales</h1>
+         <div  class="contenedor-galeria">
+          <label for="gal1" class="img-con-texto">
+            <img src="https://elmedicointeractivo.com/wp-content/uploads/2022/02/Bionexo_Tendencias_sector_salud.png" height="400em" alt="">
+            <div class="overlay">
+            
+                <p>Porque Salud?</p>
+            </div>
+           
+          </label>
+          <label for="gal2" class="img-con-texto">
+            <img  src="https://static4.depositphotos.com/1018728/331/i/450/depositphotos_3315477-stock-photo-zoom-in-statistic.jpg" alt="Imagen 2">
+            <div class="overlay">
+             
+                <p>Porque Empresarial?</p>
+            </div>
+          </label>
+          <label for="gal3" class="img-con-texto">
+            <img style="cursor: pointer;" src="https://media.istockphoto.com/id/1311084163/es/foto/guardia-de-seguridad-observando-el-sistema-de-seguridad-de-monitoreo-de-v%C3%ADdeo.jpg?s=612x612&w=0&k=20&c=TyYVc4Wf22u4O_Yt3UuTdYBRGFxroRN5vpOLa3Imrb8=" alt="Imagen 3">
+            <div class="overlay">
+              
+                <p>Porque Seguridad?</p>
+            </div>
+          </label>
+        </div>
+
+
+
+        
+           <h1>Como se Prevee a futuro</h1>
+         <div  class="contenedor-galeria">
+          <label for="gal1" class="img-con-texto">
+            <img src="https://elmedicointeractivo.com/wp-content/uploads/2022/02/Bionexo_Tendencias_sector_salud.png" height="400em" alt="">
+            <div class="overlay">
+            
+                <p>Porque Salud?</p>
+            </div>
+           
+          </label>
+          <label for="gal2" class="img-con-texto">
+            <img  src="https://static4.depositphotos.com/1018728/331/i/450/depositphotos_3315477-stock-photo-zoom-in-statistic.jpg" alt="Imagen 2">
+            <div class="overlay">
+             
+                <p>Porque Empresarial?</p>
+            </div>
+          </label>
+          <label for="gal3" class="img-con-texto">
+            <img style="cursor: pointer;" src="https://media.istockphoto.com/id/1311084163/es/foto/guardia-de-seguridad-observando-el-sistema-de-seguridad-de-monitoreo-de-v%C3%ADdeo.jpg?s=612x612&w=0&k=20&c=TyYVc4Wf22u4O_Yt3UuTdYBRGFxroRN5vpOLa3Imrb8=" alt="Imagen 3">
+            <div class="overlay">
+              
+                <p>Porque Seguridad?</p>
+            </div>
+          </label>
+        </div>
+        <!-- Contenido dinámico que se muestra al hacer clic -->
+        <div class="info-galeria">
+         
+      
+          <div style="cursor: pointer;" class="contenido" id="contenido1">
+            <h3>TRABAJO 1</h3>
+            <table  cellpadding="8">
+             
+               <tr><td>Empresarial</td><td>Crear software para gestionar el desarrollo de la empresa.</td></tr>
+              
+              <!-- <tr><td>Logistica</td><td>Monitorear en tiempo ral las distintas rutas y a nuestros choferes para brindarles un buen servicios al cliente.</td></tr>
+              <tr><td>Online</td><td>Crear plataformas de gestion de inventario y ventas online.</td></tr>
+              <tr><td>Seguridad</td><td>Crear un sistema de monitorio en las camaras de seguridad de facil acceso ante un altercado, crear un software para rastrear a delincuentes para facilitar su captura.</td></tr>
+              <tr><td>Cultural</td><td>Crer un software para el mantenimiento</td></tr>
+              <tr><td>Salud</td><td>Gestionar e implementar un software para analizar el desarrollo del software medico.</td></tr>
+              
+              <tr><td>Ocio</td><td>Programar e implementar software para el buen uso de las distintas modalidades de juegos,venta de juegos,etc.</td></tr> 
+
+              <tr><td>Bancos</td><td>Monitorear y sostener la viabilidad de los datos de los clientes, gestionar y proteger ante cualquier ataque cibernetico </td></tr>       
+            -->
+              
+              
+            </table>
+          </div>
+
+          <br>
+
+          <div style="cursor: pointer;" class="contenido" id="contenido2">
+          
+            <table border="1" cellpadding="8" >
+              <tr><td>Logistico</td><td>Monitorear en tiempo ral las distintas rutas y a nuestros choferes para brindarles un buen servicios al cliente.</td></tr>
+              <!-- <tr><td>Empresarial</td><td>Me gustaria aprender y adquirir experiencias para en un futuro formar mi propia empresa. </td></tr>
+              <tr><td>Salud</td><td>Para mi trabajar en el sector salud y ver que indirectamente ayudo a las personas que lo necesitan y a los mismos doctores tambien es un sueño a cumplir.</td></tr>
+              <tr><td>Ocio</td><td>Me encantasn los videojuegos tengo algunos conocimientos en creacion de videojuegos en 2d me gustaria aprender mas y desarrollarme para crear mi propio videojuego.</td></tr>
+              <tr><td>Seguridad</td><td>Es en uno de los  sectores que elijo con tanta prioridad ya que se ve mucha delincuencia, los policias estan limitantes ante la inseguridad y quiero ayudarlos con mi conocimiento para la ciudadania que lo necesita mas hoy en dia.</td></tr> -->
+            </table>
+          </div>
+
+          <br>
+
+          <div style="cursor: pointer;" class="contenido" id="contenido3">
+          
+            <table border="1" cellpadding="8" >
+           <tr><td>Seguridad</td><td>Crear un sistema de monitorio en las camaras de seguridad de facil acceso ante un altercado, crear un software para rastrear a delincuentes para facilitar su captura.</td></tr>
+              <!-- <tr><td>Empresarial</td><td>Segun el diario <a href="https://elpais.com/extra/elige-tu-carrera/2024-06-16/desarrollador-de-software-un-comodin-en-todos-los-negocios.html">EL PAIS</a> existe una buena evolucion ya que con un 95% de empleabilidad la busqueda de expertos ante la necesidad de servicios y aplicaciones.</td></tr>
+              <tr><td>Salud</td><td>Segun el diario <a href="https://www.lavanguardia.com/vida/20240311/9542202/desarrolladores-informaticos-personal-sanitario-mas-buscados-brl.html">LA VANGUARDIA</a> el prefil de programador tiene una tasa de insercion laboral mas alta.</td></tr>
+              <tr><td>Ocio</td><td>En el ultimo año se publicaron cerca de 1.400 ofertas digitales en el mercado laboral vinculadas a la programacion de videojuegos, testeo entre otros, segun dice <a href="https://www.ituser.es/rrhh/2023/06/los-videojuegos-tienen-un-gran-futuro-laboral-en-espana?redir=67">ITUSER.es</a></td></tr>
+              <tr><td>Seguridad</td><td>Los puestos mas demandados son desarrolladores de software, ingeinieros devops entre otros segun nos cuenta <a href="https://www.itreseller.es/al-dia/2025/01/la-ia-y-la-ciberseguridad-estimulan-la-movilidad-laboral-en-el-sector-tecnologico">ITRESELLER.es</a>.</td></tr>
+            </table> -->
+          </div>
+
+          <div class="contenido" id="contenido4">
+            <h3>Cualificaciones Profesionales</h3>
+           
+            <table border="1" cellpadding="8">
+                <!-- <tr><th>A MI ELECCION</th><th>MIS CONOCIMIENTOS</th></tr>
+                <tr><td>Creacion de paginas web</td><td>Mis puntos mas destacables son: la creacion de paginas web responsive, estructuras dinamicas, diseño y conocimientos en distintos lenguajes de programacion como html, css, Javascript, Boostrap, Python, Java entre otros.</td></tr>
+                <tr><td>Consultar y extraer informacion de distintas plataformas de almacenamiento de Datos</td><td>Me gusta gestionar y manipular la base de datos en creacion con distintas bases de datos mi dominio esta mas enfocado a MYSQL que es un gestorde base de datos muy popular.</td></tr>
+                <tr><td>Crear y gestionar Repositorios</td><td>Ya que manejo lo que es el diseño de paginas web tambien tengo conocimientos en GITHUB y GIT que sirven para la creacion de Repositorios y guardar nuestros trabajos.</td></tr>
+                <tr><td>Preparar entornos de desarrollo para sistemas Interactivos 2d y 3d</td><td>Tengo comocimientos en creacion de videojuegos en 2d usando GODOT que sirve para la creacion de videojuegos en 2d y 3d.</td></tr>
+                <tr><td>Gestionar recursos y servicios en a nube</td><td>Son las distintas plataformas, herramientas graficas de linea de comandos librerias y APIS de la plataforma en la nube.</td></tr> -->
+                
+
+
+ <div style="cursor: pointer;" class="contenido" id="contenido5">
+          
+         
+
+     
+
+        
+
+              </table>
+
+          </div>
+
+          <br>
+          
+          <div class="contenido" id="contenido2">
+            <h3> Mis cualificaciones Profesionales </h3>
+           
+            <table border="1" cellpadding="8">
+                <tr><th>MIS INTERESES</th><th>QUE DEBERIA DE MEJORAR?</th></tr>
+                <tr><td>Creacion de paginas web</td><td>Hay muchos IDE o lenguajes donde se puede hacer paginas web como PHP, C++ entre otros y estoy en proceso de aprendizaje.</td></tr>
+                <tr><td>Consultar y extraer informacion de distintas plataformas de almacenamiento de Datos</td><td>Mis conocimientos estan enfocados solo en MSQL pero existen muchos gestores de base de datos como DOCKER, NODE JS entre otros, aprender me hara mas competitivo en el mercado laboral.</td></tr>
+                <tr><td>Crear y gestionar Repositorios</td><td>Estoy enfocado en profundizar mas sobre GITHUB ya que es muy importante saber manejarlo para ser un programador completo.</td></tr>
+                <tr><td>Preparar entornos de desarrollo para sistemas Interactivos 2d y 3d</td><td>Tengo que profundizar en lo que es creacion de videojuegos en 3d ya que solo he hecho en 2d, estoy en ello.</td></tr>
+                <tr><td>Gestionar recursos y servicios en a nube</td><td>Aprender a gestionar mejor los datos y analizarlos para su buena gestion de Datos, tener en cuenta y profundizar en AMAZON WEB SERVICES.</td></tr>
+                
+              </table>
+
+          </div>
+
+          
+      
+          <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+          
+          <img src="./img/encuesta1.png" alt="">
+          <img src="./img/encuesta2.png" alt="">    
+        </div>
+
+        <br>
+        <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+          
+
+          <img src="./img/encuesta2.png" alt="">    
+        </div>
+
+        <br>
+        <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+          
+          <img src="./img/encuesta3.png" alt="">
+         
+        </div>
+       
+          <br>
+
+          <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+     
+          <img src="./img/encuesta4.png" alt="">    
+        </div>
+
+        <br>
+          <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+           
+            <img src="./img/encuesta5.png" alt=""> 
+            
+        </div>
+        <br>
+
+         <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <h3>Encuesta</h3>
+            <p>Hicimos la encuesta aqui te muestro con graficos los resultados de la encuesta.</p>
+          
+            
+            <img src="./img/encuesta6.png" alt=""> 
+        </div>
+
+        <br>
+
+        <div style="cursor: pointer;" class="contenido" id="contenido3">
+            <p>Link de la Encuesta: <a href="https://docs.google.com/forms/d/e/1FAIpQLScvGRe8sKBmvLEE5Vt5ZXr6Oy_M1WCoE7ktKCsAqjCizFM_9w/viewform?usp=dialog">Click aqui</a></p>
+           
+            
+        </div>
+        
+           
+      </section>
+      
+       </div>
+</div>
+  
+    
+             
+   
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button style="border: 1px solid black; background-color:  #1CB698;">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane "></i>
+                     
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24884633.165528085!2d-3.6601855999999566!3d40.41605120000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1742967198066!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info" style="font-size: 12px;">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://maps.app.goo.gl/y7LW1BcKxrwVFbyU9" style="text-decoration: none; color:white;">Calle Arriaga 21 MADRID-ESPAÑA</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 603 20 28 81
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope">
+                                </i>
+                                Correo: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" style="text-decoration: none; color: white;">76087583@certus.edu.pe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="script.js"></script>
+
+    <script>
+  const intereses = document.querySelectorAll('.interes');
+
+  intereses.forEach(interes => {
+    interes.addEventListener('mouseenter', () => {
+      // Detener todos los audios que estén sonando
+      document.querySelectorAll('audio').forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+
+      // Obtener el audio correspondiente
+      const audioId = interes.getAttribute('data-audio');
+      const audioElement = document.getElementById(`audio-${audioId}`);
+
+      if (audioElement) {
+        audioElement.play();
+      }
+    });
+
+    interes.addEventListener('mouseleave', () => {
+      const audioId = interes.getAttribute('data-audio');
+      const audioElement = document.getElementById(`audio-${audioId}`);
+
+      if (audioElement) {
+        audioElement.pause();
+        audioElement.currentTime = 0;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
